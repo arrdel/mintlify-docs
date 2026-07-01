@@ -1,0 +1,104 @@
+---
+title: "Automate Church Communications with Workflows"
+sidebarTitle: "Workflows"
+description: "Build trigger-based automated messaging workflows in ChurchOS to welcome members, celebrate birthdays, follow up on giving, and more."
+---
+
+Automated workflows let your team stay in consistent, personal contact with your congregation — without manually sending every message. Once a workflow is configured, ChurchOS monitors for the triggering event and dispatches the right message to the right person at exactly the right time. For busy church administrators, this means fewer tasks falling through the cracks and more time focused on ministry.
+
+## What Workflows Do
+
+A workflow is a rule that says: *when this event happens, send this message*. Workflows run automatically in the background 24/7. You configure them once, enable them, and ChurchOS handles the rest. Each workflow is made up of three components:
+
+1. **Trigger** — the event that starts the workflow (e.g., a new member is added)
+2. **Delay** — an optional waiting period before the message is sent (e.g., send 1 day after the trigger)
+3. **Message** — the email, SMS, or push notification that is delivered to the member
+
+## Built-In Workflow Triggers
+
+ChurchOS includes six ready-to-use trigger types to cover the most common church communication scenarios.
+
+<AccordionGroup>
+  <Accordion title="New Member Welcome">
+    **Trigger:** A new member record is added to your ChurchOS directory.
+
+    **Common use:** Send a warm welcome email and/or SMS introducing new members to your church, sharing next-step resources, and inviting them to a newcomers' event. This is often the first impression your church makes digitally — make it count.
+
+    **Recommended channels:** Email + SMS
+  </Accordion>
+  <Accordion title="Birthday Greeting">
+    **Trigger:** Today's date matches a member's birthday on file.
+
+    **Common use:** Send a personalized birthday message to make members feel seen and celebrated. Use `{{first_name}}` to personalize the greeting automatically. Many churches include a spiritual encouragement or a small gift (like a coffee card link) in the birthday message.
+
+    **Recommended channels:** Email or SMS
+  </Accordion>
+  <Accordion title="Giving Thank-You">
+    **Trigger:** A donation is recorded for a member (online or manually entered).
+
+    **Common use:** Automatically thank givers after every contribution. Consistent acknowledgment builds a culture of generosity and trust. You can customize the message body to reflect your church's voice.
+
+    **Recommended channels:** Email
+  </Accordion>
+  <Accordion title="Giving Lapse">
+    **Trigger:** A member who has previously given has no recorded donation in the past X weeks (you define X when setting up the workflow).
+
+    **Common use:** Gently re-engage lapsed givers with a pastoral, non-pressured message. Focus on community and belonging rather than the financial ask. Many churches set a 6–8 week lapse window.
+
+    **Recommended channels:** Email
+  </Accordion>
+  <Accordion title="Event Reminder">
+    **Trigger:** An event in your ChurchOS calendar is N days away (you define N when setting up the workflow).
+
+    **Common use:** Remind registered attendees — or all members — about upcoming events, services, or programs. Reduce no-shows and last-minute questions from your team.
+
+    **Recommended channels:** Email, SMS, or Push Notification
+  </Accordion>
+  <Accordion title="New Visitor Follow-Up">
+    **Trigger:** A person is marked as a **First-Time Visitor** in ChurchOS (via check-in or manual entry).
+
+    **Common use:** Follow up with visitors after their first Sunday to express gratitude, share connection opportunities, and answer common questions. A timely follow-up dramatically increases the likelihood of a second visit.
+
+    **Recommended channels:** Email + SMS
+  </Accordion>
+</AccordionGroup>
+
+## Creating a Workflow
+
+<Steps>
+  <Step title="Open the Workflow Builder">
+    Navigate to **Communication > Workflows**, then click **New Workflow** in the top-right corner.
+  </Step>
+  <Step title="Select a Trigger">
+    Choose one of the six built-in triggers from the dropdown menu. Some triggers — like **Giving Lapse** and **Event Reminder** — will prompt you to configure additional parameters (e.g., number of weeks lapsed, or days before the event).
+  </Step>
+  <Step title="Set a Delay">
+    Decide when the message should be sent after the trigger fires:
+    - **Immediate** — sent as soon as the trigger is detected
+    - **1 day later** — useful for follow-ups that feel thoughtful rather than automated
+    - **3 days later** — good for a second touchpoint in a multi-step sequence
+    - **Custom** — enter any number of hours or days
+
+    For time-sensitive triggers like birthday greetings, use **Immediate** (delivered at 9:00 AM on the member's birthday). For visitor follow-ups, a **1-day delay** often feels more natural.
+  </Step>
+  <Step title="Choose a Channel and Compose Your Message">
+    Select **Email**, **SMS**, or **Push Notification** as the delivery channel. Write your message in the composition panel. Use personalization variables like `{{first_name}}`, `{{last_name}}`, `{{event_name}}`, or `{{giving_amount}}` where relevant. For email, you can also apply a saved template.
+  </Step>
+  <Step title="Enable the Workflow">
+    Review your settings, then toggle the workflow to **Active** and click **Save**. The workflow will begin monitoring for its trigger immediately. You can test the workflow by clicking **Send Test** to preview the message in your own inbox or on your phone.
+  </Step>
+</Steps>
+
+## Editing, Pausing, or Deleting Workflows
+
+All of your workflows are listed under **Communication > Workflows**. From this screen you can:
+
+- **Edit** — click the workflow name to open the builder and adjust any setting. Changes take effect immediately.
+- **Pause** — toggle a workflow to **Inactive** to temporarily stop it from firing without losing your configuration. Useful during holiday seasons when automated messaging may feel out of place.
+- **Delete** — permanently remove a workflow. This action cannot be undone, and any messages already queued by that workflow will be cancelled.
+
+You can view a log of every message sent by a specific workflow by clicking **View Activity** on its row in the workflows list.
+
+<Tip>
+  For new visitors, consider creating two coordinated workflows: a **New Visitor Follow-Up** email sent **1 day after** their visit, followed by a second **SMS** sent **3 days after** with a simple "We'd love to see you again this Sunday" message. This multi-touch approach keeps your church top of mind without feeling pushy — and it runs entirely on autopilot.
+</Tip>

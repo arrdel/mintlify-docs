@@ -1,0 +1,89 @@
+---
+title: "Configure Your ChurchOS Account and Profile"
+sidebarTitle: "Account Setup"
+description: "Set up your ChurchOS church profile, invite team members, configure notification preferences, and secure your account with two-factor authentication."
+---
+
+Before you start adding members or processing donations, it's worth taking a few minutes to properly configure your ChurchOS account. A complete church profile ensures your branding appears correctly in emails and the mobile app, the right people have access to the right tools, and your account stays secure. This page covers everything from uploading your logo to enabling two-factor authentication.
+
+## Church Profile
+
+Your church profile is the foundation of your ChurchOS account. The information you enter here appears in member-facing communications, tax statements, event details, and the check-in screen.
+
+To update your church profile, navigate to **Settings → Church Profile** in the left sidebar. You can configure the following fields:
+
+- **Church Name** — the official name of your organization as it will appear across the platform.
+- **Logo** — upload a PNG or JPG file (recommended: 400×400 px, under 2 MB). Your logo appears in emails, the giving page, and the mobile app.
+- **Address** — your physical street address, used on tax statements and event location defaults.
+- **Phone Number** — displayed in outgoing communications and in your church's mobile app profile.
+- **Website URL** — linked in email footers and the mobile app's info screen.
+- **Timezone** — controls when scheduled messages are sent and how event times are displayed to members.
+
+Once you've filled in all relevant fields, click **Save Changes**. Updates take effect immediately across the entire platform.
+
+## Inviting Team Members
+
+ChurchOS lets you invite staff and volunteers to access the platform under their own login credentials. Each user is assigned a role that controls what they can see and do.
+
+To invite a new user, go to **Settings → Team Members** and click **Invite User**. Enter their name, email address, and select a role, then click **Send Invite**. They'll receive an email with a link to set their password and log in.
+
+### Roles & Permissions
+
+| Role          | Members | Giving | Events | Communication | Settings & Billing |
+|---------------|---------|--------|--------|---------------|--------------------|
+| **Admin**     | ✅ Full | ✅ Full | ✅ Full | ✅ Full       | ✅ Full            |
+| **Staff**     | ✅ Full | ✅ View | ✅ Full | ✅ Full       | ❌ No access       |
+| **Volunteer** | ✅ View | ❌ No access | ✅ Limited | ❌ No access | ❌ No access  |
+
+- **Admin** — complete access to all features, settings, billing, and integrations. Typically assigned to a lead pastor or executive director.
+- **Staff** — can manage members, run events, and send communications, but cannot access billing or integration settings.
+- **Volunteer** — read-only access to the member directory and limited event management (e.g., check-in). Ideal for volunteer coordinators.
+
+You can update a team member's role at any time from the **Settings → Team Members** page.
+
+<Warning>
+  Only users with the **Admin** role can modify billing information, upgrade or downgrade your plan, or connect and disconnect integrations (such as Stripe, QuickBooks, or Salesforce). If a Staff or Volunteer user needs access to these settings, an Admin must first update their role.
+</Warning>
+
+## Notification Preferences
+
+ChurchOS can notify your admin team by email or SMS when important events occur — such as a new online donation, a new member registration, a prayer request submission, or a failed payment.
+
+To configure notifications, go to **Settings → Notifications**. For each notification type, you can:
+
+- **Enable or disable** the notification entirely.
+- **Choose the channel** — email, SMS, or both.
+- **Add recipients** — specify which Admin or Staff users should receive that particular notification.
+
+Changes are saved automatically as you toggle each setting.
+
+## Security
+
+Keeping your ChurchOS account secure protects your congregation's personal data and your organization's financial information.
+
+### Changing Your Password
+
+To update your password, click your profile avatar in the top-right corner and select **Account Settings**. Under the **Security** tab, click **Change Password**, enter your current password followed by your new password (minimum 8 characters), and click **Update Password**.
+
+### Two-Factor Authentication (2FA)
+
+Two-factor authentication adds a second layer of protection to your login. When enabled, you'll be prompted to enter a one-time code from an authenticator app (such as Google Authenticator or Authy) each time you sign in.
+
+To enable 2FA:
+
+<Steps>
+  <Step title="Open Account Settings">
+    Click your profile avatar in the top-right corner and select **Account Settings**, then navigate to the **Security** tab.
+  </Step>
+  <Step title="Enable Two-Factor Authentication">
+    Click **Enable 2FA**. A QR code will appear on screen.
+  </Step>
+  <Step title="Scan the QR code">
+    Open your authenticator app, tap **Add Account** (or the **+** icon), and scan the QR code displayed in ChurchOS.
+  </Step>
+  <Step title="Verify and save">
+    Enter the 6-digit code generated by your authenticator app into the confirmation field in ChurchOS and click **Verify**. Two-factor authentication is now active on your account.
+  </Step>
+</Steps>
+
+We strongly recommend that all Admin users enable 2FA on their accounts.

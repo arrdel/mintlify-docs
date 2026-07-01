@@ -1,30 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "name": "ChurchOS",
+  "projectType": "saas",
+  "projectName": "ChurchOS",
+  "projectDescription": "ChurchOS is an all-in-one church management platform that helps ministries manage members, process digital giving, plan events, and communicate with their congregation.",
   "theme": "almond",
-  "colors": {
-    "primary": "#f57218",
-    "light": "#213c46",
-    "dark": "#3d82ec"
-  },
-  "favicon": "https://media.brand.dev/41660c38-2af3-4ab0-97f3-4aa75284c5f8.svg",
-  "logo": {
-    "light": "https://media.brand.dev/45a69faf-bda8-48b2-b779-c1a0d1cc36b3.svg",
-    "dark": "https://media.brand.dev/45a69faf-bda8-48b2-b779-c1a0d1cc36b3.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hello@churchos.faith"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Sign In",
-      "href": "https://churchos.faith/login"
-    }
-  },
+  "primaryColor": "#f57218",
+  "lightColor": "#213c46",
+  "darkColor": "#3d82ec",
   "navigation": {
     "tabs": [
       {
@@ -96,9 +77,35 @@
       }
     ]
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/churchos"
-    }
-  }
+  "keyFeatures": [
+    "Member management with unlimited profiles, custom fields, and group management",
+    "Digital giving with online, mobile, and text-to-give options",
+    "Automated tax statements and giving reports",
+    "Event and service planning with volunteer scheduling",
+    "Congregation check-in system",
+    "Mass email, SMS, and push notification messaging",
+    "Automated communication workflows",
+    "Prayer request management",
+    "Branded custom mobile app for congregations",
+    "Integrated church website with sermon player",
+    "50+ third-party integrations (Stripe, PayPal, QuickBooks, Salesforce, Mailjet, SendGrid)"
+  ],
+  "publicApiSurface": [
+    "Member profiles CRUD",
+    "Group management",
+    "Giving transactions",
+    "Recurring giving schedules",
+    "Tax statement generation",
+    "Event calendar",
+    "Volunteer scheduling",
+    "Check-in system",
+    "Mass messaging (email/SMS)",
+    "Automated workflow triggers",
+    "Prayer request submissions",
+    "Stripe payment integration",
+    "PayPal payment integration",
+    "QuickBooks financial sync",
+    "Salesforce CRM sync",
+    "Mailjet / SendGrid email delivery"
+  ]
 }

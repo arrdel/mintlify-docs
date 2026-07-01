@@ -1,0 +1,92 @@
+---
+title: "Send Mass Emails and SMS to Your Congregation"
+sidebarTitle: "Messaging"
+description: "Compose and send bulk emails, SMS messages, and push notifications to your entire congregation or a precisely targeted audience in ChurchOS."
+---
+
+ChurchOS Messaging lets you reach your congregation at scale — whether you're sending a Sunday service reminder to everyone, an SMS alert to a specific small group, or a push notification to your app users. You control the channel, the audience, and the timing, all from one place.
+
+## Composing a Message
+
+<Steps>
+  <Step title="Open New Message">
+    From the left navigation, go to **Communication > Messages**, then click **New Message** in the top-right corner.
+  </Step>
+  <Step title="Choose a Channel">
+    Select the channel you want to use: **Email**, **SMS**, or **Push Notification**. Each channel has its own composition options and delivery settings.
+  </Step>
+  <Step title="Select Your Audience">
+    Define who receives the message. You can choose from:
+    - **All Members** — sends to every active member in your directory
+    - **Specific Group** — targets a small group, ministry team, or volunteer roster
+    - **Custom Filter** — build a precise audience using filters like member status, age range, campus, giving history, or attendance record
+  </Step>
+  <Step title="Write Your Message">
+    Enter a **Subject** (email only) and compose your message body. For email, use the rich-text editor to add formatting, images, and links. For SMS and push notifications, keep your copy concise and direct.
+  </Step>
+  <Step title="Preview Your Message">
+    Click **Preview** to see exactly how your message will appear to recipients across desktop and mobile. For email, you can also send a test message to yourself before broadcasting.
+  </Step>
+  <Step title="Send or Schedule">
+    When you're satisfied, choose **Send Now** to deliver immediately, or click **Schedule** to pick a future date and time. Scheduled messages appear in the **Drafts & Scheduled** tab until they are sent.
+  </Step>
+</Steps>
+
+## Audience Targeting
+
+Precise targeting ensures the right people receive the right message. ChurchOS lets you filter your audience by:
+
+- **Group membership** — reach members of a specific small group, ministry, choir, or volunteer team
+- **Member status** — active members, visitors, inactive members, or custom status tags
+- **Age range** — useful for youth ministry, senior programming, or family-focused messages
+- **Campus** — if your church has multiple campuses, send campus-specific communications without manual list management
+
+Saved filters can be reused across future messages. To save a filter, build your audience criteria and click **Save Audience** before composing your message.
+
+## Email Templates
+
+Templates save you time when you send recurring messages like weekly bulletins, event invitations, or donation receipts.
+
+**Using an existing template:** When composing an email, click **Insert Template** and choose from your library of saved templates. The template content will populate the editor, where you can make any final adjustments before sending.
+
+**Creating a new template:** Go to **Communication > Templates > New Template**. Design your layout using the rich-text editor, add placeholder variables like `{{first_name}}` or `{{event_date}}` for personalization, and click **Save Template**. Your template will be available to all admin users in your account.
+
+## Message History
+
+Every message you send is logged in **Communication > Messages > Sent**. For each message you can view:
+
+- **Delivery status** — number of recipients, delivered, bounced, and failed
+- **Open rate** (email only) — percentage of recipients who opened the message
+- **Click rate** (email only) — percentage who clicked at least one link
+- **Opt-out count** — members who unsubscribed after receiving the message
+
+Use this data to refine your messaging strategy over time — higher open rates often correlate with clear subject lines and well-timed sends.
+
+## Channel-Specific Tips
+
+<Tabs>
+  <Tab title="Email">
+    - Keep subject lines under **50 characters** so they display fully on mobile devices.
+    - Use `{{first_name}}` in the subject or opening line to personalize at scale.
+    - Ensure your **Mailjet** or **SendGrid** account is connected under **Settings > Integrations** before sending bulk campaigns to avoid deliverability issues.
+    - Always include an unsubscribe link — ChurchOS adds one automatically to every outbound email.
+    - Preview on both desktop and mobile using the **Preview** panel before sending.
+  </Tab>
+  <Tab title="SMS">
+    - SMS messages are limited to **160 characters** per segment. Messages longer than 160 characters are split into multiple segments and may incur additional SMS credit usage.
+    - Keep your call-to-action clear and include a shortened link if directing members to a URL.
+    - SMS is ideal for urgent, time-sensitive messages — service cancellations, last-minute location changes, or event-day reminders.
+    - Members can reply STOP to opt out. Opt-outs are tracked automatically and those members will not receive future SMS messages.
+    - Check your **SMS credit balance** under **Settings > Billing** before large campaigns.
+  </Tab>
+  <Tab title="Push Notification">
+    - Push notifications are delivered only to members who have installed the **ChurchOS mobile app** and have notifications enabled on their device.
+    - Keep the notification title under **65 characters** and the body under **240 characters** for optimal display on both iOS and Android.
+    - Push notifications are free on all ChurchOS plans and are great for general announcements, event reminders, and prayer requests.
+    - You can deep-link a push notification to a specific section of the app (such as an event page or giving screen) by including a **Deep Link URL** in the composition panel.
+  </Tab>
+</Tabs>
+
+<Tip>
+  Schedule Sunday-morning messages — like service time reminders or worship notes — for **7:00 AM** on Sunday. Members are more likely to engage with a timely, contextual message right before they head out the door than one sent days in advance.
+</Tip>

@@ -1,0 +1,87 @@
+---
+title: "Connect Mailjet or SendGrid for Email Delivery"
+sidebarTitle: "Email Providers"
+description: "Integrate Mailjet or SendGrid with ChurchOS to improve deliverability for bulk newsletters and transactional emails sent to your congregation."
+---
+
+ChurchOS includes built-in email tools for communicating with your congregation, but when you're sending to hundreds or thousands of recipients at once, a dedicated email delivery provider makes a significant difference. Third-party providers like Mailjet and SendGrid are purpose-built for high-volume sending — they maintain strong sender reputations with inbox providers like Gmail and Outlook, which means more of your emails land in inboxes instead of spam folders.
+
+## When You Need a Dedicated Email Provider
+
+You should connect Mailjet or SendGrid to ChurchOS if any of the following apply:
+
+- You send emails to **more than a few hundred members** at a time (e.g., weekly newsletters, service announcements, event invitations).
+- Your emails are **landing in spam** or members report not receiving them.
+- You want **detailed delivery analytics** — open rates, click rates, bounces, and unsubscribes — beyond what ChurchOS natively provides.
+- You send **transactional emails** (giving receipts, event confirmations) and need reliable, fast delivery.
+
+## Supported Providers
+
+ChurchOS supports two dedicated email delivery providers. Both are reliable choices — the right one for your church depends on your sending volume and existing tools.
+
+<Tabs>
+  <Tab title="Mailjet">
+    Mailjet is a great choice for churches that want a simple setup and a generous free tier. Its API is straightforward, and its dashboard makes it easy to monitor deliverability.
+
+    <Tip>
+      Mailjet's **free plan** supports up to **6,000 emails per month** (200 per day) — more than enough for many small to mid-size churches getting started with dedicated email delivery.
+    </Tip>
+
+    <Steps>
+      <Step title="Create a Mailjet account">
+        Go to [mailjet.com](https://www.mailjet.com) and sign up for a free account. Complete the initial account setup and verify your email address.
+      </Step>
+      <Step title="Copy your API key and Secret key">
+        In the Mailjet dashboard, navigate to **Account Settings** → **API Keys**. Copy both your **API Key** and your **Secret Key** — you'll need both in the next step.
+      </Step>
+      <Step title="Open the Mailjet integration in ChurchOS">
+        In your ChurchOS dashboard, go to **Settings** → **Integrations** → **Mailjet**.
+      </Step>
+      <Step title="Paste your keys and save">
+        Enter your Mailjet **API Key** and **Secret Key** into the corresponding fields and click **Save**. ChurchOS will validate the credentials immediately.
+      </Step>
+      <Step title="Verify your sender domain in Mailjet">
+        Back in the Mailjet dashboard, go to **Account Settings** → **Sender Domains & Addresses** and add your church's email domain (e.g., `yourchurch.org`). Follow Mailjet's instructions to add the required **SPF** and **DKIM** DNS records to your domain. This is what tells inbox providers your emails are legitimate.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="SendGrid">
+    SendGrid is a high-performance email delivery platform well-suited for churches with larger congregations or higher sending volumes. It offers powerful analytics and reliable transactional email delivery.
+
+    <Steps>
+      <Step title="Create a SendGrid account">
+        Go to [sendgrid.com](https://sendgrid.com) and sign up for an account. SendGrid offers a free tier that includes up to 100 emails per day.
+      </Step>
+      <Step title="Generate an API key">
+        In the SendGrid dashboard, navigate to **Settings** → **API Keys** → **Create API Key**. Give the key a descriptive name (e.g., "ChurchOS"), select **Restricted Access**, and enable **Mail Send** permissions. Click **Create & View**, then copy the API key — you won't be able to see it again after leaving this page.
+      </Step>
+      <Step title="Open the SendGrid integration in ChurchOS">
+        In your ChurchOS dashboard, go to **Settings** → **Integrations** → **SendGrid**.
+      </Step>
+      <Step title="Paste your API key and save">
+        Enter your SendGrid API key into the field provided and click **Save**. ChurchOS will verify the key and confirm a successful connection.
+      </Step>
+      <Step title="Authenticate your sending domain in SendGrid">
+        In the SendGrid dashboard, go to **Settings** → **Sender Authentication** → **Authenticate Your Domain**. Enter your church's domain and follow the steps to add **CNAME** records to your DNS provider. Completing domain authentication is required for reliable inbox delivery.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+## Sender Domain Authentication
+
+Whichever provider you choose, **authenticating your sending domain is the single most important step** you can take to ensure your emails reach your congregation's inboxes. Domain authentication involves adding DNS records (SPF, DKIM, or CNAME, depending on the provider) that prove to receiving mail servers that your emails are genuinely sent from your domain.
+
+Here's what each record does:
+
+| Record | Purpose |
+|---|---|
+| **SPF** | Lists the servers authorized to send email on behalf of your domain |
+| **DKIM** | Adds a cryptographic signature to each email so recipients can verify it wasn't tampered with |
+| **DMARC** *(recommended)* | Tells receiving servers what to do if SPF or DKIM checks fail |
+
+If you manage your own DNS, both Mailjet and SendGrid provide exact record values to copy and paste. If your domain is managed by a web developer or IT provider, share the record values with them and ask them to add the records to your DNS zone.
+
+<Warning>
+  **Do not skip domain authentication.** Emails sent from an unauthenticated domain are routinely flagged as spam — or blocked entirely — by Gmail, Outlook, and other inbox providers. Even if your integration is connected and working, your congregation won't see your emails if your domain isn't authenticated. Complete this step before sending your first bulk email.
+</Warning>

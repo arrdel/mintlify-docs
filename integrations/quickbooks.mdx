@@ -1,0 +1,63 @@
+---
+title: "Sync ChurchOS Giving Data with QuickBooks"
+sidebarTitle: "QuickBooks"
+description: "Integrate ChurchOS with QuickBooks Online to automatically sync donations, fund designations, and expenses for clean church financial reporting."
+---
+
+The ChurchOS QuickBooks integration keeps your church's financial records in sync without manual data entry. Donation transactions recorded in ChurchOS flow directly into QuickBooks Online, mapped to the correct income accounts and fund designations — so your bookkeeper and finance team always have accurate, up-to-date records ready for review, budgeting, or audits.
+
+## What Syncs to QuickBooks
+
+The following data is synchronized from ChurchOS to QuickBooks Online:
+
+- **Donation transactions** — Individual giving records including amount, date, donor name, and payment method.
+- **Fund designations** — Gifts tagged to specific funds (e.g., General, Building, Missions) are mapped to corresponding QuickBooks accounts or classes.
+- **Expense tracking** — If you record church expenses in ChurchOS, those entries can also sync to QuickBooks for a complete financial picture.
+
+## Connecting QuickBooks
+
+<Note>
+  This integration requires **QuickBooks Online**. QuickBooks Desktop is not supported. If your church currently uses QuickBooks Desktop, you'll need to migrate to QuickBooks Online before connecting to ChurchOS.
+</Note>
+
+<Steps>
+  <Step title="Open the QuickBooks integration page">
+    In your ChurchOS dashboard, go to **Settings** → **Integrations** → **QuickBooks**.
+  </Step>
+  <Step title="Start the connection">
+    Click **Connect QuickBooks**. You'll be redirected to Intuit's secure sign-in page.
+  </Step>
+  <Step title="Sign in to QuickBooks Online">
+    Enter your QuickBooks Online credentials and select the company file (organization) you want to connect to ChurchOS.
+  </Step>
+  <Step title="Authorize ChurchOS">
+    Review the requested permissions and click **Connect** to grant ChurchOS access to read and write financial data in your QuickBooks account.
+  </Step>
+  <Step title="Map ChurchOS funds to QuickBooks accounts">
+    Back in ChurchOS, you'll be prompted to map each of your giving funds to a corresponding QuickBooks **income account** or **class**. This step ensures transactions are categorized correctly in your QuickBooks reports. Take your time here — accurate mapping is the foundation of clean financial reporting.
+  </Step>
+  <Step title="Enable auto-sync">
+    Toggle **Auto-Sync** to on. ChurchOS will now automatically push new transactions to QuickBooks on a daily basis. You can also trigger a manual sync at any time.
+  </Step>
+</Steps>
+
+## Sync Frequency
+
+By default, ChurchOS syncs new transactions to QuickBooks **once per day**, overnight. If you need your QuickBooks records updated immediately — for example, before a board meeting — you can trigger a manual sync:
+
+1. Go to **Settings** → **Integrations** → **QuickBooks**.
+2. Click **Sync Now**.
+3. Wait for the confirmation message. The sync typically completes within a few seconds.
+
+## Viewing Sync Logs & Resolving Errors
+
+ChurchOS keeps a full log of every sync attempt so you can quickly identify and fix any issues.
+
+1. Navigate to **Settings** → **Integrations** → **QuickBooks** → **Sync Logs**.
+2. Each log entry shows the sync date, number of records processed, and status (Success / Failed).
+3. Click any failed entry to see the error details and the specific transactions that didn't sync.
+4. Common errors include **unmapped funds** (a new fund was created in ChurchOS but not yet mapped to a QuickBooks account) and **duplicate transaction IDs**. The error detail view includes a direct link to resolve each issue.
+
+<Tip>
+  Map each ChurchOS giving fund to a dedicated **QuickBooks income account** (rather than a single catch-all account). This gives you clean, fund-level income reports inside QuickBooks and makes it much easier to produce accurate financial statements for your board or congregation.
+</Tip>

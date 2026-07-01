@@ -1,0 +1,88 @@
+---
+title: "Run Congregation Check-In with ChurchOS"
+sidebarTitle: "Check-In"
+description: "Track service attendance, run children's ministry secure check-in, and print security labels using ChurchOS's flexible check-in system."
+---
+
+The ChurchOS Check-In system lets you record attendance for services and events, run a secure children's ministry check-in, and print name labels and security tags — all from a single, easy-to-configure station. Whether you're a small congregation checking in 50 people or a multi-site church processing hundreds of families, the check-in system scales to fit your Sunday morning workflow.
+
+## Check-in modes
+
+ChurchOS offers three check-in modes so you can match the experience to your space, equipment, and volunteer availability.
+
+<Tabs>
+  <Tab title="Kiosk Mode">
+    Kiosk Mode turns a tablet or touchscreen into a self-service check-in terminal. Attendees walk up, search for their name or family, confirm their details, and receive a printed label — all without staff assistance.
+
+    **Best for:** Main sanctuary entrances and lobbies where you want to reduce volunteer burden and move people through quickly.
+
+    - Attendees search by **first name**, **last name**, or **phone number**.
+    - Families check in together in a single flow.
+    - Labels print automatically to a connected label printer.
+    - The screen returns to the home screen after each check-in, ready for the next attendee.
+  </Tab>
+  <Tab title="Staff Mode">
+    Staff Mode is designed for a volunteer or staff member sitting or standing at a check-in table. The interface gives the staff member a full view of the attendee list, the ability to add walk-ins, and manual override controls.
+
+    **Best for:** Children's ministry desks, special events, and situations where you want a human touch during check-in.
+
+    - Staff can search, check in, and print labels on behalf of attendees.
+    - Walk-in guests can be added to the system on the spot.
+    - Staff can flag allergies, custody notes, or other alerts that appear on the child's label.
+  </Tab>
+  <Tab title="Mobile App (QR Code)">
+    The ChurchOS mobile app allows attendees to check themselves in by scanning a QR code displayed on a screen or printed at the entrance.
+
+    **Best for:** Mid-week events, small groups, or churches that want a contactless check-in option.
+
+    - Attendees open the ChurchOS member app and tap **Check In**.
+    - They scan the event QR code displayed on a TV, monitor, or printed sign.
+    - Check-in is recorded instantly — no label printing required unless configured.
+    - Attendance data syncs to ChurchOS in real time.
+  </Tab>
+</Tabs>
+
+## Setting up a check-in station
+
+<Steps>
+  <Step title="Create a new station">
+    Go to **Events → Check-In → New Station**. Give the station a name that describes its location or purpose — for example, "Main Entrance Kiosk" or "Kids Ministry Desk."
+  </Step>
+  <Step title="Select the event or service">
+    Choose the service or event this station will be used for from the **Event** dropdown. You can associate a station with a recurring service so it's ready every week without reconfiguration.
+  </Step>
+  <Step title="Choose a check-in mode">
+    Select **Kiosk**, **Staff**, or **Mobile App (QR Code)** as the check-in mode for this station. Each mode presents a different interface when you launch the station on a device.
+  </Step>
+  <Step title="Configure label printing">
+    If you have a label printer connected, toggle **Enable Label Printing** on and select your printer from the dropdown. Choose a **label template** — standard name label, children's security tag with claim stub, or a custom template you've designed in **Settings → Label Templates**. If no printer is connected, labels can be skipped or queued for later printing.
+  </Step>
+  <Step title="Launch on your device">
+    Click **Launch Station**. ChurchOS opens the check-in interface in full-screen mode on the current device. For kiosk setups, enable your device's guided access or kiosk lock feature to prevent attendees from exiting the app.
+  </Step>
+</Steps>
+
+<Warning>
+  Before the service starts, confirm that your label printer is powered on, connected to the same network as the check-in device, and loaded with enough label stock. Running out of labels mid-service can cause delays at children's ministry check-in. Keep a spare roll on hand at every station.
+</Warning>
+
+## Children's ministry check-in
+
+ChurchOS includes a dedicated children's ministry check-in flow with security features designed to give parents peace of mind.
+
+- **Security tag printing:** When a child checks in, ChurchOS prints two labels — a **name tag** that stays with the child and a **claim tag** (also called a pickup stub) given to the parent or guardian. The two tags share a unique alphanumeric code.
+- **Guardian-only pickup enforcement:** When a parent or guardian arrives to pick up their child, the children's ministry worker scans or enters the claim tag code. ChurchOS verifies the match before releasing the child. If the codes don't match, check-in will not allow the release.
+- **Custody and allergy alerts:** Staff Mode surfaces any custody restrictions or allergy notes attached to a child's profile immediately upon check-in, so workers are informed before the child enters the room.
+- **Room assignment:** ChurchOS can automatically route children to the correct classroom based on age or grade, with the room name printed on their name tag.
+
+## Viewing attendance reports
+
+ChurchOS records every check-in event and makes attendance data available in real time.
+
+- **Live headcount:** Go to **Events → Check-In → Live View** during a service to see a real-time count of everyone who has checked in, broken down by event and room.
+- **Per-event history:** After a service, open the event in **Events → Check-In → Reports** to see a full list of attendees, check-in times, and check-in method (kiosk, staff, or app).
+- **Attendance trends:** Go to **Events → Reports → Attendance Trends** to view week-over-week and month-over-month attendance graphs, filter by event type, and export data to CSV for further analysis.
+
+<Tip>
+  For the smoothest kiosk experience, use a dedicated tablet mounted on a stand near your main entrance. A 10-inch tablet in landscape orientation works well, and adding a charging cable routed through the stand keeps the device powered throughout a multi-service Sunday. Pair it with a compact thermal label printer placed beside the stand for a clean, professional check-in station.
+</Tip>

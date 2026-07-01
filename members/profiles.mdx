@@ -1,0 +1,89 @@
+---
+title: "Create and Manage Member Profiles in ChurchOS"
+sidebarTitle: "Profiles"
+description: "Learn how to add, edit, and manage individual member profiles in ChurchOS, including custom fields, family linking, and CSV bulk import."
+---
+
+Member profiles are the foundation of ChurchOS. Every person in your congregation — whether a long-standing member, a first-time visitor, or a child in your youth program — gets a dedicated profile that stores their contact details, family connections, group memberships, and any custom data your church needs to track.
+
+## Adding a Member
+
+<Steps>
+  <Step title="Open the Add Member form">
+    From your Dashboard, navigate to **Members** in the left sidebar, then click **Add Member** in the top-right corner.
+  </Step>
+  <Step title="Fill in contact information">
+    Enter the person's **first name**, **last name**, **email address**, **phone number**, **home address**, and **birthday**. All fields except first and last name are optional at this stage and can be added later.
+  </Step>
+  <Step title="Set the member status">
+    Choose one of the four statuses that best describes this person's relationship to your church:
+    - **Active** — a current, participating member
+    - **Inactive** — a member who is no longer regularly attending
+    - **Visitor** — someone attending services but not yet a member
+    - **Guest** — a one-time or occasional attendee
+  </Step>
+  <Step title="Save the profile">
+    Click **Save Profile**. The profile is created immediately and appears in your Members list. You can return at any time to add more details, upload a photo, or link family members.
+  </Step>
+</Steps>
+
+## Custom Fields
+
+Admins can extend every member profile with fields that are specific to your church. To set these up, go to **Settings > Custom Fields** and create fields of the following types:
+
+| Field Type | Best Used For |
+|---|---|
+| **Text** | Notes, membership numbers, or any free-form entry |
+| **Date** | Baptism date, membership anniversary, salvation date |
+| **Dropdown** | Campus location, ministry interest, life stage |
+| **Checkbox** | Volunteer consent, newsletter opt-in, background check |
+
+**Examples of popular custom fields:**
+- *Baptism Date* — tracks when a member was baptized
+- *Ministry Interest* — a dropdown listing areas like Worship, Outreach, or Children's Ministry
+- *Campus* — assigns the member to a specific campus for multi-site churches
+
+Once created, custom fields appear on every member profile and can be used as filters on the Members list.
+
+## Family Records
+
+Linking family members together makes it easy to see household relationships and send family-level communications. To link a family member to a profile:
+
+1. Open the member's profile and scroll to the **Family** section.
+2. Click **Add Family Member**.
+3. Search for an existing member by name or email, or create a new profile on the spot.
+4. Select the relationship type (Spouse, Child, Parent, Sibling, Other) and click **Save**.
+
+Linked family members appear as a group on each individual's profile, and you can view the full household by clicking **View Family Unit**.
+
+## Bulk Import via CSV
+
+If you are migrating from another system or have member data in a spreadsheet, you can import everyone at once using a CSV file.
+
+<Steps>
+  <Step title="Download the CSV template">
+    In the Members list, click **Import**, then select **Download Template**. This gives you a pre-formatted CSV with all supported column headers.
+  </Step>
+  <Step title="Fill in your member data">
+    Open the template in a spreadsheet application and populate it with your member records. Each row represents one person. Required columns are `first_name` and `last_name`; all others are optional.
+  </Step>
+  <Step title="Upload your completed CSV">
+    Return to **Members > Import** and click **Upload CSV**. Select your completed file from your computer.
+  </Step>
+  <Step title="Map your columns">
+    ChurchOS will attempt to auto-match your column headers to profile fields. Review each mapping and correct any mismatches before proceeding.
+  </Step>
+  <Step title="Confirm the import">
+    Review the preview summary showing the number of records to be created. Click **Confirm Import** to finish. A confirmation email is sent to your admin address when the import is complete.
+  </Step>
+</Steps>
+
+## Editing and Archiving Members
+
+To edit a profile, open it from the Members list and click **Edit** in the top-right corner. Make your changes and click **Save**.
+
+To archive a member, open their profile, click the **Actions** menu (⋯), and select **Archive Member**. Archived members are removed from your active Members list but remain fully searchable by enabling the **Show Archived** toggle.
+
+<Note>
+  Archiving a member does **not** delete their record. All profile data, group history, and custom field values are preserved. You can restore an archived member at any time by opening their profile and clicking **Restore Member**.
+</Note>

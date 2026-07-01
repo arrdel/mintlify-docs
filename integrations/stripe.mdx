@@ -1,0 +1,68 @@
+---
+title: "Accept Donations via Stripe in ChurchOS"
+sidebarTitle: "Stripe"
+description: "Connect Stripe to ChurchOS to accept online donations, set up recurring giving, and access real-time payment reporting for your church."
+---
+
+Stripe is the recommended payment processor for ChurchOS. It powers a seamless giving experience for your congregation — whether they're donating from a desktop browser, a mobile device, or via text-to-give — while giving your finance team full visibility into every transaction from within ChurchOS.
+
+## What Stripe Enables
+
+Once connected, Stripe unlocks the following giving features in ChurchOS:
+
+- **Online donations** — Accept one-time gifts through your ChurchOS giving page.
+- **Recurring giving** — Let members schedule weekly, bi-weekly, or monthly donations.
+- **Text-to-give** — Members can text a keyword to a dedicated number to give instantly.
+- **Payment reports** — View detailed transaction history, fund breakdowns, and export data for year-end giving statements.
+
+## Connecting Stripe
+
+<Note>
+  You need a Stripe account to complete this setup. Creating one is free — visit [stripe.com](https://stripe.com) to get started before following the steps below.
+</Note>
+
+<Steps>
+  <Step title="Open the Stripe integration page">
+    In your ChurchOS dashboard, go to **Settings** → **Integrations** → **Stripe**.
+  </Step>
+  <Step title="Start the connection">
+    Click **Connect with Stripe**. You'll be redirected to Stripe's secure OAuth flow.
+  </Step>
+  <Step title="Log in or create a Stripe account">
+    Sign in to your existing Stripe account, or create a new one if your church doesn't have one yet. Stripe accounts are free to create at [stripe.com](https://stripe.com).
+  </Step>
+  <Step title="Authorize ChurchOS">
+    Review the permissions ChurchOS is requesting, then click **Authorize Access**. This allows ChurchOS to create charges, manage subscriptions, and pull transaction data on your behalf.
+  </Step>
+  <Step title="Your giving page is live">
+    Once authorization is complete, you'll be redirected back to ChurchOS. Your giving page is now active and ready to accept donations through Stripe.
+  </Step>
+</Steps>
+
+## Processing Fees
+
+ChurchOS does not charge any additional fees on top of Stripe's standard rates.
+
+| Fee Type | Amount |
+|---|---|
+| Standard card transaction | 2.9% + 30¢ per transaction |
+| ChurchOS platform fee | $0 |
+
+Stripe deposits funds to your connected bank account on their standard payout schedule (typically 2 business days after a transaction clears, once your account is fully verified).
+
+<Tip>
+  Enable the **"Cover the fee"** option in your ChurchOS giving settings. This gives donors the choice to absorb the Stripe processing fee themselves, so 100% of their intended gift reaches your church. Many donors are happy to opt in when the choice is clearly presented.
+</Tip>
+
+## Payouts
+
+Stripe follows its own payout schedule to transfer funds to your church's bank account. By default, payouts occur on a **rolling 2-day schedule** — meaning funds from Monday's donations arrive in your bank account on Wednesday. You can review your payout history directly in your [Stripe Dashboard](https://dashboard.stripe.com) under **Balance** → **Payouts**.
+
+## Giving Reports
+
+You can view donation data in two places:
+
+- **ChurchOS Dashboard** — Navigate to **Giving** → **Reports** for fund-level breakdowns, donor summaries, and year-end giving statements formatted for your church.
+- **Stripe Dashboard** — Log in to [dashboard.stripe.com](https://dashboard.stripe.com) for raw transaction-level data, dispute management, and payout history.
+
+For most day-to-day reporting needs, the ChurchOS giving reports will have everything your finance team needs.
